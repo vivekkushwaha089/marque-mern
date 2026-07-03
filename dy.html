@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#ffffff;
+}
+
+.container{
+    width:900px;
+    margin:30px auto;
+    background:#6657c5;
+    color:white;
+    padding:25px 35px;
+    border:2px solid #3f3196;
+}
+
+h1{
+    text-align:center;
+    color:black;
+    background:white;
+    padding:15px;
+    margin:-25px -35px 25px -35px;
+    font-size:38px;
+}
+
+div{
+    margin-bottom:18px;
+}
+
+td{
+    display:inline-block;
+    width:170px;
+    font-weight:bold;
+    font-size:14px;
+}
+
+input[type=text],
+input[type=email],
+input[type=date],
+input[type=number],
+textarea{
+    width:230px;
+    padding:6px;
+    border:1px solid #ccc;
+    outline:none;
+}
+
+textarea{
+    width:245px;
+    height:70px;
+}
+
+input[type=radio],
+input[type=checkbox]{
+    margin-left:10px;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    margin-top:10px;
+    color:white;
+}
+
+table,th,td{
+    border:1px solid white;
+}
+
+th,td{
+    padding:8px;
+    text-align:center;
+}
+
+th{
+    background:#5847b7;
+}
+
+input[type=submit],
+input[type=reset]{
+    padding:7px 18px;
+    margin-top:20px;
+    cursor:pointer;
+    border:none;
+    background:white;
+    color:black;
+    font-weight:bold;
+}
+
+input[type=submit]:hover{
+    background:green;
+    color:white;
+}
+
+input[type=reset]:hover{
+    background:red;
+    color:white;
+}
+
+small{
+    color:#f0f0f0;
+    font-size:12px;
+}
+    </style>
+</head>
+<body>    
+    <div>
+        <h1><U>STUDENT REGISTRATION FORM</U></h1>
+    </div>
+    <div>
+        <td>FIRST NAME</td>
+        <input type="text" maxlength="30" id="FIRST NAME">
+        <td>(max 30 characters a-z and A-Z)</td>
+    </div>
+    
+    <div>
+        <td>LAST NAME</td>
+        <input type="text" maxlength="30" id="LAST NAME">
+        <td>(max 30 characters a-z and A-Z)</td>
+    </div>
+    <div>
+        <td>DATE OF BIRTH</td>
+        <input type="date">
+    </div>
+    <div>
+        <td>EMAIL ID</td>
+        <input type="email">
+    </div>
+    <div>
+        <td>MOBILE NO</td>
+        <input type="number" maxlength="10">
+        <td>(10 digit numbetr)</td>
+    </div>
+    <div>
+        <td><label>GENDER</label></td>
+        <td><input type="radio" name="Male">Male</td>
+        <td><input type="radio" name="Female">Female</td>
+
+
+    </div>
+    <div>
+        <td>ADDRESS</td>
+        <textarea name="Address" id="ADDRESS"></textarea>
+    </div>
+    <div>
+        <td>CITY <input type="text" maxlength="30"></td>
+        <td>(max 30 characters a-z and A-z)</td>
+    </div>
+    <div>
+        <td>PIN CODE <input type="number" maxlength="6">(6 digit number)</td>
+    </div>
+    <div>
+        <td>STATE <input type="text" maxlength="30">(max 30 characters a-z and A-Z)</td>
+    </div>
+    <div>
+        <td>COUNTRY <input type="text" placeholder="INDIA" readonly></td>
+    </div>
+    <div>
+        <td>HOBBES</td>
+        <input type="checkbox" > Drawing
+        <input type="checkbox" >Singing
+        <input type="checkbox" >dancing
+        <input type="checkbox" >Sketing
+        <input type="checkbox">Others <textarea rows>Others</textarea>
+    </div>
+    <div>
+        <td>QUALIFICATION</td>
+        <table>
+            <tr>
+                <th>S.No</th>
+                <th> Examination</th>
+                <th>Board</th>
+                <th>Percentage</th>
+                <th>Year of Passing</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td colspan="3">Class X</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td colspan="3">Class XII</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td colspan="3">Graduation</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td colspan="3">Masters</td>
+            </tr>
+            <tfoot>
+                <tr>
+                    <td colspan="2">(10 chars max)</td>
+                    <td colspan="1">(uoto 2 decimal)</td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+    <div>
+        <td>COURSES <br>APPLIED FOR</td>
+        <input type="radio">BCA
+        <input type="radio">BCom
+        <input type="radio">B.A
+    </div>
+    <div>
+        <input type="submit">
+        <input type="reset">
+    </div>
+</body>
+</html>
