@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: gilroy, sans-serif;
+}
+
+html,
+body {
+    height: 100vh;
+    width: 100vw;
+}
+ .container1{
+            margin: 20px;
+            padding: 20px;
+            text-align: center;
+
+        }
+        .cl{
+            color: rgb(69, 69, 177);
+            font-size: 40px;
+        }
+        .RE{
+            margin: 20px;
+        }
+        .container2{
+            text-align: center;
+            width: 1000px;
+            height: 300px;
+            border-radius: 30px;
+            background-color: whitesmoke;
+            overflow: hidden;
+        }
+        .container3{
+            text-align: center;
+             width: 1000px;
+            height: 300px;
+            border-radius: 30px;
+            background-color: whitesmoke;
+             overflow: hidden;
+        }
+        .container4{
+            text-align: center;
+             width: 1000px;
+            height: 300px;
+            border-radius: 30px;
+            background-color: whitesmoke;
+             overflow: hidden;
+        }
+        .Sc1{
+            display: flex;
+            width: 1200px;
+            gap: 100px;
+            margin: 180px;
+            position: relative;
+            top: -140px;
+            padding: auto;
+        }
+        .Jo{
+            margin: 15px;
+        }
+        .So{
+            margin: 15px;
+            color: rgb(242, 93, 93);
+            font-size: 20px;
+        }
+        .St{
+            margin: 15px;
+            font-size: 30px;
+        }
+        .Lo{
+            font-size: 20px;
+        }
+        .Lo:hover{
+    transform:translateY(15px);
+    color: rgb(230, 76, 76);
+}
+
+/* original code  */
+.icons{
+    height: 89px;
+    width: 110px;
+    background-color:  rgb(79, 79, 225);
+    position: relative;
+    border-radius: 35%;
+    right: -260px;
+    top: -280px;
+}
+.container2 .IC{
+   position: absolute;
+
+}
