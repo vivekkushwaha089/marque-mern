@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Box</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+         *{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+body{
+    background:#f5f5f5;
+}
+.services{
+    width:90%;
+    margin:50px auto;
+    display:flex;
+    justify-content:space-between;
+    gap:25px;
+    border: 1.5px solid;
+}
+.card{
+    background:#fff;
+    width:32%;
+    padding:15px;
+    border:1px solid #ddd;
+    transition:.3s;
+    border: 3px solid;
+}
+
+.card:hover{
+    transform:translateY(30px);
+    box-shadow:0 10px 20px rgba(0,0,0,.2);
+}
+.card img{
+    width:100%;
+    height:200px;
+    object-fit:cover;
+}
+.card h1{
+    margin:18px 0 10px;
+    font-size:28px;
+}
+.card p{
+    color:#4a4848;
+    line-height:26px;
+    font-size:16px;
+}
+.choose{
+    width:90vw;
+    margin:45px;
+    background:#f4ecec;
+    padding:50px 20px;
+    text-align:center;
+    border: 3px solid;
+    /* display: flex; */
+}
+.choose h1{
+    font-size:50px;
+    color:#6679f7;
+}
+.Line{
+    width:70px;
+    height:5px;
+    background:#ff4d2d;
+    margin:20px auto 50px;
+}
+.Chosen-box{
+    display:flex;
+    justify-content:space-between;
+    /* width: 2250px; */
+}
+.box{
+    width:24%;
+    padding:20px;
+    border-right:1px solid #ddd;
+    width: 225px;
+}
+.box:last-child{
+    border:none;
+}
+.box i{
+    font-size:55px;
+    color:#999;
+    margin-bottom:20px;
+}
+.box h3{
+    color:#ff4d2d;
+    font-size:28px;
+    margin-bottom:10px;
+}
+.box span{
+    display:block;
+    font-size:60px;
+    color:#ff4d2d;
+    font-weight:bold;
+    margin-bottom:15px;
+}
+.box p{
+    color:#555;
+    font-size:18px;
+    line-height:28px;
+}
+
+    </style>
+</head>
+<body>
+   <section class="services">
+    <div class="card">
+        <img src="/kitchen.png" alt="Kitchen">
+        <h1>Kitchen Remodels</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere adipisci recusandae hic in eligendi quidem atque explicabo est distinctio illum.</p>
+    </div>
+    <div class="card">
+        <img src="/window-and-door.png" alt="Window">
+        <h1>Windows & Doors</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia impedit id distinctio esse nesciunt sequi eaque nobis modi natus rem.</p>
+    </div>
+    <div class="card">
+        <img src="/Porce.png" alt="Porches">
+        <h1>Decks & Porches</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad eligendi architecto, eius culpa cumque tenetur facere quod! Perspiciatis, ipsam quaerat!</p>
+    </div>
+   </section>
+   <section class="choose">
+    <h1>Why Choose Us</h1>
+    <div class="Line"></div>
+    <div class="Chosen-box">
+    <div class="box">
+                <i class="fa-solid fa-location-dot"></i>
+                <h3>We have</h3>
+                <span>2</span>
+                <p>Central locations in city.</p>
+            </div>
+             <div class="box">
+                <i class="fa-regular fa-comments"></i>
+                <h3>Over</h3>
+                <span>95%</span>
+                <p>Students would recommend us.</p>
+            </div>
+
+            <div class="box">
+                <i class="fa-solid fa-certificate"></i>
+                <h3>We are</h3>
+                <span>100%</span>
+                <p>Accredited by the institution.</p>
+            </div>
+
+            <div class="box">
+                <i class="fa-regular fa-thumbs-up"></i>
+                <h3>We have a</h3>
+                <span>95%</span>
+                <p>Excellent pass rate.</p>
+            </div>
+        </div>
+   </section>
+</body>
+</html>

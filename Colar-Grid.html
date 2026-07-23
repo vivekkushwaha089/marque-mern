@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>color grid</title>
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #1f2742;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#Container1{
+    width: 900px;
+    height: 450px;
+
+    display: grid;
+    gap: 12px;
+
+    grid-template-columns: 1fr 1.1fr 1.1fr 1fr;
+    grid-template-rows: repeat(3,1fr);
+}
+.items{
+    border-radius: 3px;
+}
+#box1{
+    background: #73c44d;
+    grid-row: 1 / 4;
+    grid-column: 1;
+}
+#box2{
+    background: #73c44d;
+    grid-column: 2 / 4;
+}
+#box3{
+    background: #ef2d32;
+    grid-column: 4;
+}
+#box4{
+    background: #f7b733;
+    grid-column: 2;
+}
+#box5{
+    background: #ef2d32;
+    grid-column: 3;
+}
+#box6{
+    background: #73c44d;
+    grid-column: 4;
+    grid-row: 2 / 4;
+}
+#box7{
+    background: #ef2d32;
+    grid-column: 2;
+}
+#box8{
+    background: #f7b733;
+    grid-column: 3;
+}
+    </style>
+</head>
+<body>
+    <section>
+<div id="Container1">
+    <div class="items" id="box1"></div>
+    <div class="items" id="box2"></div>
+    <div class="items" id="box3"></div>
+    <div class="items" id="box4"></div>
+    <div class="items" id="box5"></div>
+    <div class="items" id="box6"></div>
+    <div class="items" id="box7"></div>
+    <div class="items" id="box8"></div>
+</div>
+    </section>
+</body>
+</html>
